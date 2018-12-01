@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&amp;effect=distressed-wood" rel="stylesheet" />
+  <style type="text/css">
+    @font-face {
+      font-family: 'neontubes';
+      src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+      src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+
+
+    div.header {
+      color: #004261;
+      padding: 15px;
+      font-size: 85px;
+      font-family: 'neontubes';
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      line-height: 160px;
+      font-variant: small-caps;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      color: #d4eaff;
+      text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+      -webkit-animation: blink 4s infinite alternate;
+      animation: blink 4s infinite alternate;
+      -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+      transform: translateZ(0) translate3D(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      will-change: opacity;
+
+    }
+
+    #image {
+      padding: 0px;
+      margin-left: 40px;
+      border-radius: 5px;
+      font-size: 30px;
+      color: white;
+      font-family: 'neontubes';
+      text-align: left;
+      float: left;
+      clear: both;
+      margin-bottom: 50px;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      transition-duration: 0.6s;
+    }
+
+    #image:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    div.image {
+      padding: 5px;
+      margin-left: 40px;
+      border-radius: 5px;
+      float: left;
+      text-align: left;
+      clear: both;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      color: #00b4d2;
+      font-size: 35px;
+      font-family: 'neontubes';
+      text-align: left;
+      transition: transform .2s;
+    }
+
+    h3:hover {
+      transform: scale(1.1);
+      transition-duration: 0.6s;
+    }
+
+    a {
+      color: #00b4d2;
+      text-decoration: none;
+      transition: transform .2s;
+    }
+
+    a:hover {
+      color: #cc5500;
+      transform: scale(1.1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      transition-duration: 0.6s;
+    }
+
+    @media only screen and(max-width:500px) {
+      background {
+        width: 500px;
+      }
+    }
+
+    #btm {
+      color: white;
+      font-size: 20px;
+    }
+
+    #btm:hover {
+      color: orange;
+    }
+
+    @keyframes buzz {
+      70% {
+        opacity: 0.80;
+      }
+    }
+
+    @keyframes blink {
+      40% {
+        opacity: 1;
+      }
+
+      42% {
+        opacity: 0.8;
+      }
+
+      43% {
+        opacity: 1;
+      }
+
+      45% {
+        opacity: 0.2;
+      }
+
+      46% {
+        opacity: 1;
+      }
+    }
+
+    .footer {
+      position: fixed;
+      left: 45%;
+      bottom: 0;
+      width: 20%;
+      background-color: #004261;
+      color: white;
+      text-align: center;
+      font-family: segoe ui;
+      font-size: 18px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      opacity: 0.7;
+      margin-top: 40px;
+    }
+
+    .footer:hover {
+      color: white;
+      background-color: #00b4d2;
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header"><strong>My Portfolio</strong></div>
+
+  <div class="image">
+    <h3 style="margin-left: 40px;"><a href="NEONSIGN.html" title="NeonSign">Big Country&#39;s BBQ Entrance</a></h3>
+    <img id="image" alt="" src="/bcbbqNeon.jpg" style="width: 450px; height: 221px; float: left; margin: 0px;border-radius:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:1px solid #00b4d2;" />
+  </div>
+
+  <div class="image">
+    <h3 style="margin-left: 40px;"><a href="JoshBBQ.html" title="BigCountry'sBBQSite">Big Country&#39;s BBQ Main Site</a></h3>
+    <img id="image" alt="" src="/joshbbq.jpg" style="width: 450px; height: 221px; float: left; margin: 0px;border-radius:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:1px solid #00b4d2;" />
+  </div>
+
+  <div class="image">
+    <h3 style="margin-left: 40px;"><a href="http://www.hairluvbyashley.com" target="_blank" title="HairLuvByAshley">HairLuv
+        By Ashley</a></h3>
+    <img id="image" alt="" src="/hairluv.jpg" style="width: 450px; float: left;clear:both; margin: 0px; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px; border: 1px solid rgb(0, 180, 210); height: 298px;" />
+  </div>
+
+  <div></div>
+
+  <div></div>
+
+  <div class="footer">
+    <p><a id="btm" href="default.html" target="_blank" title="Help">C-Panel Help</a></p>
+  </div>
+
+  <div></div>
+
+  <div></div>
+  
+</body>
+
+</html>
